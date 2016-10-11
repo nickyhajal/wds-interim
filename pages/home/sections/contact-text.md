@@ -1,1 +1,1 @@
-For our first year of the “Scholarships for Real Life” program, we’re opening the application only to those who have attended.
+Have questions or comments? We want to here them! If you are unable to find the answer to your question in our [Frequently Asked Questions](/faqs) section, please fill out the form to the right, and we'll get back to you as soon as we can!
