@@ -1,0 +1,6 @@
+{
+  "name": "VideoChooser",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./VideoChooser.js"
+}

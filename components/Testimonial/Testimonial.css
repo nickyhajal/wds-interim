@@ -1,0 +1,66 @@
+@value colors: "../../styles/colors.css";
+@value blue, orange, green from colors;
+
+
+.testimonial {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  opacity: 0;
+  transition: 0.2s all;
+}
+
+.testimonial:global(.selected) {
+  opacity: 1;
+}
+
+.testimonial:global(.next) {
+  left: 30%;
+  opacity: 0;
+}
+.testimonial:global(.previous) {
+  left: -30%;
+  opacity: 0;
+}
+
+.testimonial img{
+  width: 125px;
+  height: 125px;
+  margin: 0 auto;
+  display: block;
+}
+
+.text {
+  text-align: center;
+  width: 465px;
+  margin: 30px auto;
+  font-family: KarlaItalic;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.name {
+  font-size: 15px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.from {
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .header {
+    display: flex;
+  }
+
+  .row {
+    padding: 0 16px;
+  }
+
+}

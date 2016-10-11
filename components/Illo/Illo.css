@@ -1,0 +1,9 @@
+@value colors: "../../styles/colors.css";
+@value orange from colors;
+
+.illo {
+	position: absolute;
+  display: block;
+  z-index: 3;
+  background-size: 100% auto;
+}

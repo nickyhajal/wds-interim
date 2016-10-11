@@ -1,0 +1,30 @@
+@font-face {font-family: "Vitesse"; src: url("https://files.wds.fm/fonts/Vitesse-Medium.otf") format("opentype");}
+@font-face {font-family: "VitesseLight"; src: url("https://files.wds.fm/fonts/Vitesse-Light.otf") format("opentype");}
+@font-face {font-family: "VitesseBold"; src: url("https://files.wds.fm/fonts/Vitesse-Bold.otf") format("opentype");}
+@font-face {font-family: "VitesseBook"; src: url("https://files.wds.fm/fonts/Vitesse-Book.otf") format("opentype");}
+@font-face {font-family: "Populaire"; src: url("https://files.wds.fm/fonts/Populaire.otf") format("opentype");}
+@font-face {font-family: "Karla"; src: url("https://files.wds.fm/fonts/Karla-Regular.ttf") format("truetype");}
+@font-face {font-family: "KarlaBold"; src: url("https://files.wds.fm/fonts/Karla-Bold.ttf") format("truetype");}
+@font-face {font-family: "KarlaItalic"; src: url("https://files.wds.fm/fonts/Karla-Italic.ttf") format("truetype");}
+
+body {
+	font-family: Karla;
+}
+
+section {
+	position: relative;
+}
+
+.contentainer {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.clear {
+	clear:both;
+}
+
+p {
+	margin-bottom: 16px;
+}

@@ -1,0 +1,86 @@
+@value colors: "../../../styles/colors.css";
+@value blue, orange, cream, coffee from colors;
+
+.shell {
+	padding: 40px 0 240px;
+	background: cream;
+	min-height: 400px;
+	position: relative;
+}
+
+.top-angle {
+	background: cream;
+	width: 110%;
+	/*background: blue;*/
+	height:  80px;
+	position: relative;
+	top: -70px;
+	z-index: 2;
+	transform: rotate(1.4deg);
+	left: 0;
+	margin-bottom: -80px;
+}
+
+.title {
+	width: 610px;
+	height: 91.5px;
+  background-image: url(https://files.wds.fm/images/home/testimonial-title.png);
+  background-size: 100% auto;
+  margin: 0 auto 60px;
+}
+
+.arrow-prev, .arrow-next {
+	position: absolute;
+	width: 12px;
+	height: 19px;
+  background-image: url(https://files.wds.fm/images/arrow.png);
+  background-size: 100% auto;
+  top: 150px;
+  z-index: 3;
+  transition: 0.2s all;
+}
+
+.arrow-prev:global(.disabled), .arrow-next:global(.disabled) {
+	opacity: 0.3;
+}
+.arrow-prev {
+  left: 30px;
+}
+
+.arrow-next {
+  right: 30px;
+  transform: rotate(180deg);
+}
+
+.testimonials {
+	position: relative;
+}
+
+.dots {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 560px;
+	margin: 0 auto;
+	z-index: 3;
+}
+
+.dot {
+	background: blue;
+	opacity: 0.4;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	transition: 0.2s all;
+	float: left;
+	margin-right: 4px;
+}
+
+.dot:last-of-type {
+	margin-right: 0;
+}
+
+.dot:global(.selected) {
+	background: blue;
+	opacity: 1;
+}

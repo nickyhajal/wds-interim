@@ -1,0 +1,251 @@
+@value colors: "../../../styles/colors.css";
+@value blue, orange, green, coffee, cream from colors;
+
+.shell {
+	padding: 40px 0 80px;
+	background: green;
+	min-height: 400px;
+}
+
+.top-angle {
+	background: green;
+	width: 110%;
+	height:  80px;
+	position: relative;
+	top: -70px;
+	z-index: 2;
+	transform: rotate(-1.6deg);
+	left: 0;
+	margin-bottom: -80px;
+}
+
+.title {
+	width: 382px;
+	height: 96px;
+  background-image: url(https://files.wds.fm/images/home/details-title.png);
+  background-size: 100% auto;
+  margin: 0 auto 60px;
+}
+
+.date {
+	width: 330px;
+	font-family: Vitesse;
+	color: #fff;
+	line-height: 120%;
+	font-size: 18px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 65px;
+}
+
+.intro-shell {
+	width: 840px;
+	margin: 0 auto;
+	position: relative;
+	left: -60px;
+}
+
+.intro-img {
+	width: 424.5px;
+	height: 283px;
+  background-image: url(https://files.wds.fm/images/home/details-intro.jpg);
+  background-size: 100% auto;
+	float: left;
+}
+
+.separator {
+	position: relative;
+  height: 435px;
+  z-index: 0;
+  width: 954px;
+  margin: -70px auto -210px;
+}
+
+.under {
+	position: relative;
+  height: 125px;
+  z-index: 0;
+  width: 954px;
+  margin: -160px auto 140px;
+}
+
+.sep-img-1 {
+	width: 425px;
+	height: 283px;
+  background-image: url(https://files.wds.fm/images/home/details-sep-img-1.png);
+  background-size: 100% auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sep-img-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+	width: 423.5px;
+	height: 278px;
+  background-image: url(https://files.wds.fm/images/home/details-sep-img-2.jpg);
+  background-size: 100% auto;
+}
+
+.sep-img-3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+	width: 423.5px;
+	height: 282px;
+  background-image: url(https://files.wds.fm/images/home/details-sep-img-3.png);
+  background-size: 100% auto;
+}
+
+.intro {
+	color: #fff;
+	font-size: 17px;
+	line-height: 160%;
+	float: left;
+	width: 340px;
+	margin-left: 70px;
+	margin-top: 42px;
+}
+
+.included {
+	position: relative;
+	z-index: 2;
+	background: cream;
+	width: 714px;
+	margin: -58px auto 0;
+	padding: 0 60px 60px 60px;
+	box-sizing: border-box;
+}
+
+.inc-angle {
+	position: relative;
+	background: cream;
+	width: 714px;
+	height: 30px;
+  top: -9px;
+	transform: skewY(1.2deg);
+	left: 0;
+	margin-bottom: 30px;
+	margin-left: -60px;
+	margin-right: -60px;
+}
+
+.inc-content {
+	font-size: 16px;
+}
+
+.included h3, .schedule h3 {
+	color: #050505;
+	font-size: 26px;
+	font-family: Vitesse;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.included li {
+	list-style-type: none;
+	margin-bottom: 34px;
+	font-size: 15px;
+	position: relative;
+}
+
+.included ul {
+  background-image: url(https://files.wds.fm/images/home/details-inc-lines.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0px 32px;
+  padding-bottom: 10px;
+}
+
+:global(.checked) li:before {
+    background: url(https://files.wds.fm/images/check.png);
+    width: 16px;
+    height: 18px;
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: -3px;
+    background-size: 100% auto;
+}
+
+.included li:nth-child(5) {
+    margin-top: -5px;
+}
+
+.included li:nth-child(6) {
+    margin-top: -4px;
+}
+
+.included li:nth-child(7) {
+    margin-top: -3px;
+}
+
+.included blockquote, .schedule blockquote {
+	font-family: KarlaItalic;
+	opacity: 0.5;
+	margin: -25px 0 0 5px;
+	padding: 0;
+	font-size: 14px;
+	line-height: 140%;
+}
+
+.schedule {
+	position: relative;
+	z-index: 2;
+	background: cream;
+	width: 714px;
+	margin: 150px auto 230px;
+	padding: 0 60px 60px 60px;
+	box-sizing: border-box;
+}
+
+.sch-angle {
+	position: relative;
+	background: cream;
+	width: 714px;
+	height: 30px;
+  top: -9px;
+	transform: skewY(-1.8deg);
+	left: 0;
+	margin-bottom: 30px;
+	margin-left: -60px;
+	margin-right: -60px;
+}
+
+.sch-content {
+	font-size: 14px;
+}
+
+.sch-content table:before {
+	content: "";
+  background-image: url(https://files.wds.fm/images/home/details-sch-highlight.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 78px;
+  height: 160px;
+  position: absolute;
+  z-index: 3;
+  left: 9px;
+  top: 177px;
+}
+
+.sch-content table {
+	width: 100%;
+  background-image: url(https://files.wds.fm/images/home/details-sch-lines.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: 0 56px;
+  margin-bottom: 35px;
+}
+
+.sch-content table th {
+    text-align: left;
+    padding: 19px 0 18px 16px;
+    font-family: KarlaBold;
+}
+
+.sch-content table td {
+	text-align: right;
+}

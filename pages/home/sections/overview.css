@@ -1,0 +1,81 @@
+@value colors: "../../../styles/colors.css";
+@value blue, orange, green, coffee from colors;
+
+.shell {
+	padding: 40px 0 80px;
+	background: blue;
+	min-height: 400px;
+}
+
+.top-angle {
+	background: blue;
+	width: 110%;
+	/*background: blue;*/
+	height:  80px;
+	position: relative;
+	top: -70px;
+	z-index: 2;
+	transform: rotate(-2deg);
+	left: 0;
+	margin-bottom: -80px;
+}
+
+.title {
+	width: 226.5px;
+	height: 65px;
+  background-image: url(https://files.wds.fm/images/home/overview-title.png);
+  background-size: 100% auto;
+  margin: 0 auto 60px;
+}
+
+.date {
+	float: left;
+	width: 170px;
+	font-family: Vitesse;
+	color: #fff;
+	line-height: 140%;
+	font-size: 18px;
+}
+
+.intro-shell {
+	width: 470px;
+	margin-left: 247px;
+}
+
+.intro, .story {
+	color: coffee;
+	line-height: 140%;
+	font-size: 18px;
+}
+
+.story div {
+	column-count: 2;
+	column-gap: 40px;
+	font-size: 16px;
+	height: 176px;
+}
+
+.story-shell {
+	margin-top: 80px;
+}
+
+.story h2 {
+	color: #fff;
+	font-family: Vitesse;
+	width: 100%;
+}
+
+.story p {
+	-webkit-margin-before: 0;
+	margin-bottom:20px;
+}
+
+.videos {
+	margin-top: 74px;
+}
+
+.contentainer {
+	width: 714px;
+	margin: 0 auto;
+	position: relative;
+}

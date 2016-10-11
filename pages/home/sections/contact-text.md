@@ -1,0 +1,1 @@
+For our first year of the “Scholarships for Real Life” program, we’re opening the application only to those who have attended.

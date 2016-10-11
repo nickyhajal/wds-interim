@@ -1,0 +1,56 @@
+@value colors: "../../styles/colors.css";
+@value blue, orange, green from colors;
+
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 100%;
+	padding: 16px 40px;
+	background: white;
+	box-sizing: border-box;
+	z-index: 10;
+}
+
+.logo {
+  color: blue;
+  text-decoration: none;
+  background-image: url(https://files.wds.fm/images/logo.png);
+  background-size: auto 100%;
+  width: 123px;
+  height: 26px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 1px;
+}
+
+.nav {
+  margin-top: 5px;
+	position: relative;
+	float:right;
+	display: inline-block;
+	padding-right: 260px;
+}
+
+.link {
+	color: orange;
+	margin-right: 25px;
+	display: block;
+	float: left;
+	font-family: "Vitesse";
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .header {
+    display: flex;
+  }
+
+  .row {
+    padding: 0 16px;
+  }
+
+}

@@ -1,0 +1,55 @@
+@value colors: "../../styles/colors.css";
+@value orange, coffee, darkblue from colors;
+
+.shell {
+	width: 100%;
+	min-height: 100px;
+	bakground: orange;
+}
+
+.shell :global .wistia_embed.visible {
+	display:block;
+}
+
+.shell :global .wistia_embed {
+	display:none;
+}
+
+.controls {
+	display: block;
+	margin-top: 16px;
+}
+
+.label {
+	margin-top: 7px;
+	margin-right: 4px;
+	float: left;
+	font-size: 15px;
+}
+
+.buttons {
+	float: left;
+}
+
+.buttons button {
+	border: 0;
+	display: block;
+	float : left;
+	color: coffee;
+	background: #fff;
+	padding: 8px 20px;
+	margin-left: 9px;
+	font-size: 14px;
+	font-family: Karla;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.buttons button:focus {
+	outline: 0;
+}
+
+.buttons button:global.active {
+	background: darkblue;
+	color: #fff;
+}

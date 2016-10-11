@@ -1,0 +1,86 @@
+@value colors: "../../../styles/colors.css";
+@value darkestblue, orange, cream, coffee, green from colors;
+
+.shell {
+	padding: 40px 0 80px;
+	background: darkestblue;
+	min-height: 400px;
+	position: relative;
+}
+
+.left {
+  float: left;
+  width: 314px;
+  margin-right: 130px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 714px;
+}
+
+.top-angle {
+  background: darkestblue;
+  width: 110%;
+  height:  80px;
+  position: relative;
+  top: -70px;
+  z-index: 2;
+  transform: skewY(1.6deg);
+  left: 0;
+  margin-bottom: -80px;
+}
+
+.title {
+  margin: 20px auto 28px;
+  float: left;
+  color: #fff;
+  font-family: Vitesse;
+}
+
+.ilo {
+	width: 228px;
+	height: 209px;
+  background-image: url(https://files.wds.fm/images/home/contact-illo.png);
+  background-size: 100% auto;
+  float: left;
+  margin-top: 60px;
+}
+
+.text {
+	font-family: Karla;
+  font-size: 16px;
+  width: 360px;
+  float: left;
+  line-height: 160%;
+  color: #fff;
+}
+
+.button {
+	margin-top: 20px;
+}
+
+.form {
+  float: left;
+  margin-top: 75px;
+}
+
+.form label {
+  display: block;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.form input, .form textarea {
+  padding: 12px;
+  font-family: Karla;
+  width: 246px;
+  border: 0;
+}
+.form textarea {
+  height: 140px;
+}
+
+.row {
+  margin-bottom: 30px;
+}

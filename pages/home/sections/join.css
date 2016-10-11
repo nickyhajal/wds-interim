@@ -1,0 +1,75 @@
+@value colors: "../../../styles/colors.css";
+@value blue, orange, cream, coffee, green from colors;
+
+.shell {
+	padding: 120px 0 200px;
+	background: green;
+	min-height: 400px;
+	position: relative;
+}
+
+.title {
+	width: 121.5px;
+	height: 53px;
+  background-image: url(https://files.wds.fm/images/home/join-title.png);
+  background-size: 100% auto;
+  margin: 0 auto 28px;
+  float: left;
+}
+
+.img {
+	width: 349px;
+	height: 323.5px;
+  background-image: url(https://files.wds.fm/images/home/join-image.png);
+  background-size: 100% auto;
+  float: left;
+  margin-left: -50px;
+  margin-right: 140px;
+}
+
+.box {
+  position: relative;
+	background: blue;
+	width: 906px;
+	height: 400px;
+	margin: 0 auto;
+	padding-top: 0px;
+	margin-top: 60px;
+	padding-bottom: 10px;
+}
+
+.box-angle {
+    position: relative;
+		background: blue;
+    background: #62C1CB;
+    width: 906px;
+    height: 30px;
+    top: -8px;
+    transform: skewY(-1deg);
+    left: 0;
+    margin-bottom: 20px;
+}
+
+.text {
+	font-family: Karla;
+  font-size: 16px;
+  width: 360px;
+  float: left;
+  line-height: 160%;
+}
+
+.realtime {
+	padding: 11px;
+  border: 2px solid #fff;
+  width: 300px;
+  float: left;
+  margin-top: 36px;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+}
+
+.button {
+	float: left;
+	margin-top: 20px;
+}

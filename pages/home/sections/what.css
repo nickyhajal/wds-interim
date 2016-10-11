@@ -1,0 +1,158 @@
+@value colors: "../../../styles/colors.css";
+@value tan, orange, green, coffee from colors;
+
+.shell {
+	padding: 80px 0 80px;
+	background: tan;
+	min-height: 400px;
+}
+
+.title {
+	width: 441px;
+	height: 101px;
+  background-image: url(https://files.wds.fm/images/home/what-title.png);
+  background-size: 100% auto;
+  margin: 0 auto 60px;
+}
+
+.contentainer {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.sub-shell {
+	display: block;
+	position: relative;
+	clear: both;
+}
+
+.img {
+	background-size: 100% auto;
+	position: relative;
+	z-index: 2;
+	float:left;
+}
+
+.text {
+	position: relative;
+	z-index: 3;
+	float:left;
+	box-sizing: border-box;
+  line-height: 170%;
+  font-size:15px;
+	margin-bottom:50px;
+}
+
+.text h3 {
+	font-family: Vitesse;
+	font-size: 26px;
+	color: coffee;
+}
+
+
+/* Keynotes */
+.sub-shell:global(.keynotes) {
+	right: -135px;
+}
+
+:global(.keynotes) .img {
+	width: 405px;
+	height: 270px;
+  background-image: url(https://files.wds.fm/images/home/what-keynotes.jpg);
+}
+
+:global(.keynotes) .text {
+	width: 540px;
+	height: 365.5px;
+  background-image: url(https://files.wds.fm/images/home/what-keynotes-over.png);
+  padding: 40px 122px 60px 55px;
+  margin-left: -94px;
+  margin-top: 60px;
+}
+
+/* Academies */
+.sub-shell:global(.academies) {
+	right: 145px;
+}
+
+:global(.academies) .img {
+	width: 405px;
+	height: 270px;
+  background-image: url(https://files.wds.fm/images/home/what-academies.jpg);
+  float: right;
+}
+
+:global(.academies) .text {
+	width: 540px;
+	height: 365.5px;
+  background-image: url(https://files.wds.fm/images/home/what-academies-over.png);
+  padding: 45px 40px 50px 140px;
+  margin-right: -91px;
+  margin-top: 150px;
+  float: right;
+}
+
+/* Meetups */
+.sub-shell:global(.meetups) {
+	right: -150px;
+}
+
+:global(.meetups) .img {
+	width: 378.5px;
+	height: 252.5px;
+  background-image: url(https://files.wds.fm/images/home/what-meetups.jpg);
+}
+
+:global(.meetups) .text {
+	width: 542px;
+	height: 241px;
+  background-image: url(https://files.wds.fm/images/home/what-meetups-over.png);
+  padding: 40px 122px 60px 55px;
+  margin-left: -94px;
+  margin-top: 145px;
+  margin-bottom: 170px;
+}
+
+/* Activities */
+.sub-shell:global(.activities) {
+	right: 171px;
+}
+
+:global(.activities) .img {
+	width: 378.5px;
+	height: 252.5px;
+  background-image: url(https://files.wds.fm/images/home/what-activities.jpg);
+  float: right;
+}
+
+:global(.activities) .text {
+	width: 535px;
+  height: 324.5px;
+  background-image: url(https://files.wds.fm/images/home/what-activities-over.png);
+  padding: 40px 53px 60px 137px;
+  margin-right: -86px;
+  margin-top: 41px;
+  margin-bottom: 100px;
+  float: right;
+}
+
+/* Meetups */
+.sub-shell:global(.parties) {
+	right: -150px;
+}
+
+:global(.parties) .img {
+	width: 378.5px;
+	height: 252.5px;
+  background-image: url(https://files.wds.fm/images/home/what-parties.jpg);
+}
+
+:global(.parties) .text {
+	width: 542px;
+	height: 241px;
+  background-image: url(https://files.wds.fm/images/home/what-parties-over.png);
+  padding: 40px 126px 60px 55px;
+  margin-left: -94px;
+  margin-top: 140px;
+  margin-bottom: 170px;
+}

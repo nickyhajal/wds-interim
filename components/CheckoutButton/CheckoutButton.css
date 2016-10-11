@@ -1,0 +1,2 @@
+@value colors: "../../styles/colors.css";
+@value blue, orange, green from colors;

@@ -1,0 +1,22 @@
+.footer {
+  padding: 40px 0;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+}
+
+.footer ul {
+	margin: 0;
+	padding: 0;
+}
+.footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer .content {
+	margin-top: 10px;
+	opacity: 0.5;
+}
+
