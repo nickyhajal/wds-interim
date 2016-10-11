@@ -8,5 +8,39 @@
 	width: 100%;
 	height: 100%;
   display: block;
+  background: transparent;
+  z-index: 200;
+}
+
+.modals:global(.hidden) {
+  display: none;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  display: block;
+  z-index: 200;
   background: rgba(0,0,0,0.2);
+  transition: 0.2s all 0.1s;
+  opacity: 0;
+}
+
+.modals:global(.visible) .overlay {
+  opacity: 1;
+  transition: 0.2s all 0.0s;
+}
+
+.modals :global(.modal) {
+	z-index: 201;
+	opacity: 0;
+  transition: 0.2s all 0.0s;
+}
+
+.modals:global(.visible) :global(.modal) {
+  transition: 0.2s all 0.1s;
+  opacity: 1;
 }

@@ -45,6 +45,7 @@ class TicketStub extends React.Component {
         className={this.state.visibility}
         onMouseOver={this.show.bind(this)}
         onMouseOut={this.hide.bind(this)}
+        onClick={this.props.onClick}
       ></div>
     );
   }

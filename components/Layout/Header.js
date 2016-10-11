@@ -5,7 +5,9 @@ import TicketStub from '../TicketStub';
 import styles from './Header.css';
 import CSSModules from 'react-css-modules';
 
-const Header = () =>
+const Header = ({
+  ticketClick
+}) =>
    (
       <header styleName="header">
         <div styleName="row">
@@ -15,7 +17,7 @@ const Header = () =>
             <a href="#activities" styleName="link">Activities</a>
             <a href="#tickets" styleName="link">Tickets</a>
             <a href="#contact" styleName="link">Contact Us</a>
-            <TicketStub />
+            <TicketStub onClick={ticketClick} />
           </nav>
         </div>
       </header>

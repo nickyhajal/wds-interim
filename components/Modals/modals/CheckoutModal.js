@@ -17,12 +17,12 @@ class CheckoutModal extends React.Component {
   }
   render() {
     return (
-      <div styleName="modals">
-        <
+      <div styleName="modal" className="modal">
+        <h2>Let's Do This!</h2>
       </div>
     );
   }
 
 }
 
-export default CSSModules(Modals, styles);
+export default CSSModules(CheckoutModal, styles);

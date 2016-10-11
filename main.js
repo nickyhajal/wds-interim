@@ -16,11 +16,15 @@ import ReactDOM from 'react-dom';
 import FastClick from 'fastclick';
 import { Provider } from 'react-redux';
 
-import store from './core/store';
 import router from './core/router';
 import history from './core/history';
 import '~/styles/normalize.global.css';
 import '~/styles/main.global.css';
+
+// Init Store
+import configureStore from '~/store/configureStore';
+import initialState from '~/store/initialState';
+const store = configureStore(initialState);
 
 let routes = require('./routes.json'); // Loaded with utils/routes-loader.js
 const container = document.getElementById('container');

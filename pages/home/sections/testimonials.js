@@ -67,7 +67,7 @@ class Testimonials extends React.Component {
 	  		selected = 'selected';
   		}
 	  	return (
-	  		<div className={selected} styleName="dot" />
+	  		<div className={selected} styleName="dot" key={`dot-${i}`} />
 	  	);
   	});
   }

@@ -50,7 +50,6 @@ class VideoChooser extends React.Component {
   videoButtons() {
     return this.props.videos.map((v, i) => {
       const id = v[1];
-      console.info(id);
       let className = '';
       if (this.state.selected === i) {
         className += 'active';

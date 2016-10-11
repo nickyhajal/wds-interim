@@ -1,12 +1,20 @@
-@value colors: "../../styles/colors.css";
+@value colors: "../../../styles/colors.css";
 @value orange from colors;
 
-.modals {
-	position: fixed;
+.modal {
+	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 500px;
+	height: 400px;
   display: block;
-  background: rgba(0,0,0,0.2);
+  background: #fff;
+  padding: 60px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  transition: 0.2s all 0.1s;
 }
