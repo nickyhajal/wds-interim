@@ -24,21 +24,21 @@ class Testimonials extends React.Component {
 					avatar: "https://files.wds.fm/images/home/testimonial-av-1.png"
 				},
 				{
-					name: "Bernie Sanders",
-					from: 'Jamaica, Mahn',
-					text: "I love WDS, it's revolutionary.",
+					name: "Gary Ware",
+					from: 'San Diego, CA',
+					text: "WDS is a magical experience that I look forward to every year! When you are surrounded by so much creative, positive, and innovative energy you can't help but to leave inspired with a desire to do good in the world.",
 					avatar: "https://files.wds.fm/images/home/testimonial-av-1.png"
 				},
 				{
-					name: "John Frankenstein",
-					from: 'Nedersvile, Netherlands',
-					text: "I came for the punch and the pie. It was delicious.",
+					name: "Toréa Rodriguez",
+					from: 'Santa Cruz, CA',
+					text: "I go each year to the World Domination Summit so that I can be pushed just outside of my comfort zone, to get out of any ruts that I might be in and to kickstart me into thinking differently.",
 					avatar: "https://files.wds.fm/images/home/testimonial-av-1.png"
 				},
 				{
-					name: "Ted Mosby",
-					from: 'New York, NY',
-					text: "I met my wife here, it was great, I'd love to tell you about how I met her.",
+					name: "Kendrick Uy",
+					from: 'British Columbia, Canada',
+					text: "It’s just one of those things that’s hard to explain to people but everyone who’s attended know that it was worth their while. If you’ve never gone to WDS before, definitely sign up for next year. You’ll learn many things that you can use in your everyday life and the connections you make with other people is priceless.",
 					avatar: "https://files.wds.fm/images/home/testimonial-av-1.png"
 				}
 			]
