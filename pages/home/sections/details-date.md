@@ -1,2 +1,2 @@
-## July 10 - 17, 2017
+## July 11 - 17, 2017
 ## Portland, Oregon
