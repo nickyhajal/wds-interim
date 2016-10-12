@@ -38,7 +38,7 @@ class Testimonials extends React.Component {
 				{
 					name: "Kendrick Uy",
 					from: 'British Columbia, Canada',
-					text: "It’s just one of those things that’s hard to explain to people but everyone who’s attended know that it was worth their while. If you’ve never gone to WDS before, definitely sign up for next year. You’ll learn many things that you can use in your everyday life and the connections you make with other people is priceless.",
+					text: "It’s hard to explain, but everyone who’s attended know that it was worth their while. If you’ve never gone to WDS before, definitely sign up for next year. You’ll learn many things that you can use in your everyday life and the connections you make with other people is priceless.",
 					avatar: "https://files.wds.fm/images/home/testimonial-av-1.png"
 				}
 			]
