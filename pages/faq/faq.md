@@ -8,7 +8,7 @@ The weekend consists of three primary activities: main-stage events with keynote
 
 WDS was founded by <a href="http://chrisguillebeau.com" target="blank"> Chris Guillebeau</a>, explorer of the world and *New York Times* bestselling author of *The $100 Startup*.
 
-![](https://c1.staticflickr.com/9/8152/28702801720_147d349b09_c.jpg)
+![](https://c1.staticflickr.com/9/8152/28702801720_147d349b09.jpg)
 
 <div class="line-canvas"></div>
 
@@ -22,7 +22,7 @@ Please note: Once tickets are gone, they're gone. We do not hold any tickets bac
 
 All WDS tickets are non-refundable. Transfers and name changes on main-stage (360) tickets are available for a $100 fee up to 60 days and a $200 fee 30 days prior to the event. After **June 10th, 2017**, no further transfers or name changes will be possible.
 
-![](https://c6.staticflickr.com/9/8080/28964847645_2104f0e98f_c.jpg)
+![](https://c6.staticflickr.com/9/8080/28964847645_2104f0e98f.jpg)
 
 <div class="line-canvas"></div>
 
@@ -36,7 +36,7 @@ Soon after the first ticket sale for WDS 2017, ticket holders can transfer their
 
 We're sure that you or your client would be great! But we do not accept nominations for speakers. Everyone who attends WDS is a big part of everything. Current year speakers are nominated by alumni speakers from previous years.
 
-![](https://c7.staticflickr.com/9/8642/28391063454_f2c2a60962_c.jpg)
+![](https://c7.staticflickr.com/9/8642/28391063454_f2c2a60962.jpg)
 
 <div class="line-canvas"></div>
 
@@ -50,6 +50,6 @@ WDS is a sponsor-free, non-commercial gathering. We do not accept advertising or
 
 Every year we recruit a number of volunteer "ambassadors" to serve our attendees during WDS. To apply for this role, you must live in Portland at least most of the year, and you must be available during the entire weekend of the event. Applications will open after ticket sales end. When applications become available, Chris will make an announcement on his <a href="http://chrisguillebeau.com/">blog</a> and through <a href="https://twitter.com/chrisguillebeau">Twitter.</a>
 
-![](https://c6.staticflickr.com/9/8744/28921912765_82af586d2e_c.jpg)
+![](https://c6.staticflickr.com/9/8744/28921912765_82af586d2e.jpg)
 
 
