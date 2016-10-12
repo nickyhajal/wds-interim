@@ -1,0 +1,22 @@
+@value colors: "../../../../styles/colors.css";
+@value orange from colors;
+
+.ask .bigButton {
+    background: #f7f4ea;
+    border: 0;
+    font-family: KarlaBold;
+    font-weight: normal;
+    width: 245px;
+    margin-right: 5px;
+    height: 100px;
+    color: #ec943b;
+    font-size: 18px;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.bigButton:hover {
+  background: #fff0e3;
+}

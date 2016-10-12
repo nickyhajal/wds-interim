@@ -49,7 +49,9 @@ class Modals extends React.Component {
     }
   }
 
-  close() {
+  close(e) {
+    e.stopPropagation();
+    e.preventDefault();
     this.props.act.closeModal();
   }
 
@@ -61,7 +63,7 @@ class Modals extends React.Component {
           onClick={ this.close.bind(this) }
           styleName="overlay"
         />
-        <CheckoutModal visible={ this.props.modals.open == 'checkout' ? vis : 'hidden' } />
+        <CheckoutModal close={this.close.bind(this)} visible={ this.props.modals.open == 'checkout' ? vis : 'hidden' } />
       </div>
     );
   }

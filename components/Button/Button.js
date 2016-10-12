@@ -19,7 +19,7 @@ class Button extends React.Component {
   };
 
   render() {
-    const { component, className, to, href,
+    const { component, onClick, className, to, href,
       children, ...other } = this.props;
     return React.createElement(
       component || (to ? Link : (href ? 'a' : 'button')), // eslint-disable-line no-nested-ternary
@@ -31,7 +31,7 @@ class Button extends React.Component {
         ),
         to,
         href,
-        ...other,
+        onClick
       },
       children
     );

@@ -10,7 +10,7 @@ import { html as strDate }  from './overview-date.md';
 import { html as strIntro } from './overview-intro.md';
 import { html as strStory } from './overview-story.md';
 
-const Overview = () => {
+const Overview = ({openCheckout}) => {
 	const videos = [
 		['2016', 'ygt7a002y5'],
 		['2015', 'dl8sd19mbz'],
@@ -22,6 +22,7 @@ const Overview = () => {
 	]
   return (
     <section styleName="shell">
+	    <a name="overview"></a>
     	<Illo left="0" top="180" size="218x483" name="overview-1" />
     	<Illo right="0" top="410" size="598x355" name="overview-2" />
       <div styleName="top-angle"/>
@@ -31,9 +32,8 @@ const Overview = () => {
 	    	<div styleName="date" dangerouslySetInnerHTML={{ __html: strDate}} />
 	    	<div styleName="intro-shell">
 		    	<div styleName="intro" dangerouslySetInnerHTML={{ __html: strIntro}} />
-		    	<CheckoutButton>Register Now!</CheckoutButton>
+		    	<CheckoutButton onClick={ openCheckout }>Register Now!</CheckoutButton>
 		    </div>
-		    <VideoChooser videos={videos} styleName="videos" />
 		    <div styleName="story-shell">
 		    	<div styleName="story" dangerouslySetInnerHTML={{ __html: strStory}} />
 		    </div>
@@ -41,5 +41,6 @@ const Overview = () => {
     </section>
   );
 }
+		    // <VideoChooser videos={videos} styleName="videos" />
 
 export default CSSModules(Overview, styles);

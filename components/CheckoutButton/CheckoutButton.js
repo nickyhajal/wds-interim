@@ -15,12 +15,9 @@ import Button from '../Button';
 
 class CheckoutButton extends React.Component {
 
-  openCheckout() {
-    console.info("hey");
-  }
   render() {
     return (
-      <Button onClick={this.openCheckout.bind(this)}>{this.props.children}</Button>
+      <Button onClick={this.props.onClick}>{this.props.children}</Button>
     );
   }
 

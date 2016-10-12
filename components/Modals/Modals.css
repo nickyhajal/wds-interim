@@ -1,5 +1,5 @@
 @value colors: "../../styles/colors.css";
-@value orange from colors;
+@value orange, darkestblue from colors;
 
 .modals {
 	position: fixed;
@@ -10,6 +10,16 @@
   display: block;
   background: transparent;
   z-index: 200;
+}
+
+.modals h3 {
+  color: darkestblue;
+  font-family: Vitesse;
+  font-size: 26px;
+}
+
+.modals p {
+  font-size: 18px;
 }
 
 .modals:global(.hidden) {
@@ -37,10 +47,12 @@
 .modals :global(.modal) {
 	z-index: 201;
 	opacity: 0;
+  box-shadow: -38px -26px 125px rgba(0,0,0,0.1);
   transition: 0.2s all 0.0s;
 }
 
 .modals:global(.visible) :global(.modal) {
-  transition: 0.2s all 0.1s;
+  transition: 0.2s opacity 0.1s, 0.2s box-shadow 0.1s;
   opacity: 1;
+  box-shadow: 78px 66px 125px rgba(0,0,0,0.4);
 }

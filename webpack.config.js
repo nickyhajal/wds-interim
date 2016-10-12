@@ -92,6 +92,7 @@ const config = {
         include: [
           path.resolve(__dirname, './components'),
           path.resolve(__dirname, './actions'),
+          path.resolve(__dirname, './utils'),
           path.resolve(__dirname, './store'),
           path.resolve(__dirname, './reducers'),
           path.resolve(__dirname, './core'),

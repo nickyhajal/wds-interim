@@ -9,6 +9,7 @@ import { html as strContact }  from './contact-text.md';
 const Contact = () =>
   (
     <section styleName="shell">
+      <a name="contact"></a>
       <div styleName="top-angle" />
       <div styleName="content">
         <div styleName="left">

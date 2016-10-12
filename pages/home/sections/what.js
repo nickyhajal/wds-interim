@@ -15,6 +15,7 @@ import { html as strParties }  from './what-parties.md';
 const What = () => {
   return (
     <section styleName="shell">
+    	<a name="activities"></a>
     	<Illo right="60" top="280" size="230x220" name="what-1" />
     	<Illo left="0" top="670" size="107x540" name="what-2" />
     	<div styleName="contentainer">

@@ -1,0 +1,185 @@
+@value colors: "../../../../styles/colors.css";
+@value orange, blue, tan, darkblue from colors;
+
+.modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500px;
+	height: 400px;
+  display: block;
+  background: #fff;
+  padding: 60px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  transition: 0.2s all 0.1s;
+}
+
+.newShell {
+  margin-top: 30px;
+}
+
+.error {
+  padding: 8px;
+  color: #fff;
+  background: #bd461f;
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+
+.processing {
+      position: absolute;
+    background: rgba(255, 255, 255, 0.85);
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.processMessage {
+  background: #fff;
+    border: 3px solid rgba(0,0,0,0.1);
+    width: 370px;
+    padding: 26px 20px 34px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 10px;
+    text-align: center;
+    font-family: KarlaItalic;
+    font-weight: bold;
+    font-size: 19px;
+
+}
+
+.cardSwitcher {
+  display: block;
+  color: #DB7F1C;
+  font-family: Vitesse;
+  text-align: center;
+  padding: 10px 0 9px;
+  background: #fbfbf7;
+  margin-left: -60px;
+  margin-right: -60px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.existingCardRow {
+  background: #f5f3ee;
+  margin-left: -60px;
+  margin-right: -60px;
+  display: block;
+  padding: 20px 60px;
+  border: 2px solid #f3efe7;
+  border-width: 1px 0;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 0;
+}
+
+.productName {
+  color: #484843;
+  font-size: 22px;
+}
+
+.cost {
+  font-family: VitesseBold;
+  color: #908f83;
+  font-size: 22pt;
+}
+
+.feeCost {
+  font-size: 12px;
+  font-family: VitesseBook;
+  font-weight: normal;
+  width: 100px;
+  color: #8a8a82;
+}
+
+.quantityBox {
+  float: right;
+  margin-right: 16px;
+  margin-top: -5px;
+}
+
+.quantityBox label {
+  font-size: 14px;
+  margin-right: 12px;
+  color: rgb(176, 175, 166);
+  position: relative;
+  top: 6px;
+}
+
+.productRow {
+  background: #f7f7f2;
+  margin-left: -60px;
+  margin-right: -60px;
+  margin-top: -43px;
+  padding: 34px 60px 34px;
+  font-family: KarlaBold;
+  border-bottom: 2px solid #e8e8df;
+  border-top: 2px solid #e8e8df;
+}
+
+.priceBox {
+  float: right;
+  text-align: center;
+  margin-top: -34px;
+  margin-right: -57px;
+  border-left: 2px solid #e8e6e1;
+  padding: 18px 20px 16px;
+}
+
+.productRow :global(.Select) {
+  /*display: inline-block;*/
+  float: right;
+  width: 95px;
+}
+
+.cardExp {
+    font-family: KarlaItalic;
+    float: right;
+    margin-top: -17px;
+    color: #484843;
+}
+
+.cardName {
+    font-family: KarlaBold;
+    color: #484843;
+}
+
+.cardIntro {
+    font-family: VitesseBold;
+    float: left;
+    margin-right: 20px;
+    color: #9e9e96;
+}
+
+.checkoutForm button {
+  background: #DB7F1C;
+  border: 0;
+  font-size: 16px;
+  color: #fff;
+  font-family: Vitesse;
+  padding: 12px 36px;
+  font-weight: normal;
+  font-size: 17px;
+  position: relative;
+  top: 20px;
+  margin-bottom:20px;
+}
+
+.zip {
+  width: 120px;
+}
+.cvv {
+  width: 90px;
+}
