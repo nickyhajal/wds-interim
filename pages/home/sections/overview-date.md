@@ -1,5 +1,5 @@
 WDS
 <br>
-July 10 - 16, 2017
+July 11 - 17, 2017
 <br>
 Portland, Oregon
