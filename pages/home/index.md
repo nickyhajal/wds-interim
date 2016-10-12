@@ -1,5 +1,5 @@
 ---
-title: React Static Boilerplate
+title: World Domination Summit 2017
 ---
 
 ## Welcome!

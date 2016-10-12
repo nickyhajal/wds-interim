@@ -1,13 +1,53 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- *
- * Copyright © 2015-2016 Konstantin Tarkus (@koistya)
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
+@value colors: "../../styles/colors.css";
+@value blue, orange, green, coffee from colors;
 
+
+
+.layout {
+	background: blue;
+}
+
+.shell {
+	padding: 40px 0 80px;
+	background: fff;
+	min-height: 400px;
+}
+
+.top-angle {
+	background: #f2efed;
+	width: 100%;
+	height:  80px;
+	position: relative;
+	top: -70px;
+	z-index: 2;
+  transform: skewY(1.2deg);
+  width: 780px;
+  margin-left: -60px;
+	left: 0;
+	margin-bottom: -80px;
+}
+
+.content h1 {
+	font-family: Vitesse;
+	text-align: center;
+}
+
+.content h2 {
+	font-family: KarlaBold;
+	font-size: 16px;
+	margin-top: 50px;
+}
+
+.content {
+	background: #f2efed;
+	width: 780px;
+	margin: 180px auto 30px;
+	box-sizing: border-box;
+	padding: 60px;
+}
+.content p {
+	line-height: 140%;
+}
 @media screen and (max-width: 1024px) {
 
   .content {

@@ -10,8 +10,8 @@
     "chunk": "main"
   },
   {
-    "path": "/about",
-    "page": "./pages/about"
+    "path": "/faq",
+    "page": "./pages/faq"
   },
   {
     "path": "/tasks/:status(pending|completed)?",

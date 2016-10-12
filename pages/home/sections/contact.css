@@ -8,10 +8,25 @@
 	position: relative;
 }
 
+.success {
+  font-size: 28px;
+  position: relative;
+  top: 90px;
+  color: #fff;
+  font-family: karlaitalic;
+  text-align: center;
+  left: 60px;
+}
+
 .left {
   float: left;
   width: 314px;
   margin-right: 130px;
+}
+
+.left a {
+  color: #fff;
+  font-family: KarlaBold;
 }
 
 .content {

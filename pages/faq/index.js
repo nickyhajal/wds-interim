@@ -10,10 +10,11 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import s from './styles.css';
-import { title, html } from './index.md';
+import styles from './styles.css';
+import CSSModules from 'react-css-modules';
+import { title, html } from './faq.md';
 
-class AboutPage extends React.Component {
+class FAQ extends React.Component {
 
   componentDidMount() {
     document.title = title;
@@ -21,13 +22,18 @@ class AboutPage extends React.Component {
 
   render() {
     return (
-      <Layout className={s.content}>
-        <h1>{title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+      <Layout styleName="layout">
+        <section styleName="shell">
+            <div styleName="content">
+            <div styleName="top-angle"/>
+              <h1>{title}</h1>
+              <div dangerouslySetInnerHTML={{ __html: html }} />
+            </div>
+        </section>
       </Layout>
     );
   }
 
 }
 
-export default AboutPage;
+export default CSSModules(FAQ, styles);

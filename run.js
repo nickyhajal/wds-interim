@@ -20,7 +20,7 @@ const config = {
   title: 'World Domination Summit 2017',        // Your website title
   url: 'https://2017.worlddominationsummit.com',          // Your website URL
   project: 'worlddominationsummit',      // Firebase project. See README.md -> How to Deploy
-  trackingID: 'UA-XXXXX-Y',                 // Google Analytics Site's ID
+  trackingID: 'UA-35322212-1',                 // Google Analytics Site's ID
 };
 
 const tasks = new Map(); // The collection of automation tasks ('clean', 'build', 'publish', etc.)

@@ -34,6 +34,7 @@ const Overview = ({openCheckout}) => {
 		    	<div styleName="intro" dangerouslySetInnerHTML={{ __html: strIntro}} />
 		    	<CheckoutButton onClick={ openCheckout }>Register Now!</CheckoutButton>
 		    </div>
+		    <VideoChooser videos={videos} styleName="videos" />
 		    <div styleName="story-shell">
 		    	<div styleName="story" dangerouslySetInnerHTML={{ __html: strStory}} />
 		    </div>
@@ -41,6 +42,5 @@ const Overview = ({openCheckout}) => {
     </section>
   );
 }
-		    // <VideoChooser videos={videos} styleName="videos" />
 
 export default CSSModules(Overview, styles);
