@@ -79,3 +79,45 @@
 	margin: 0 auto;
 	position: relative;
 }
+
+@media screen and (max-width: 1024px) {
+
+	.contentainer {
+		width: 100%;
+	}
+	.date {
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+	.intro-shell {
+		margin-left: 0;
+		 box-sizing: border-box;
+		padding: 0 16px;
+		float: none;
+		width: 100%;
+	}
+	.intro-shell button {
+		position: relative;
+		z-index: 3;
+	}
+	.story-shell {
+		margin-top: 170px;
+	}
+	.intro {
+		margin-left: 0;
+		float: none;
+	}
+	.story {
+		margin-top: 30px;
+		padding: 0 16px;
+		box-sizing: border-box;
+	}
+	.story div {
+		column-count: 1;
+	}
+	.videos :global(.wistia_embed) {
+		width: 100% !important;
+	}
+
+}

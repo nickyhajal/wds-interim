@@ -53,3 +53,19 @@
 	background: darkblue;
 	color: #fff;
 }
+
+@media screen and (max-width: 1024px) {
+
+	.buttons button {
+		margin-bottom: 5px;
+	}
+
+
+.label {
+	float: left;
+	font-size: 15px;
+	margin-left: 20;
+}
+
+
+}

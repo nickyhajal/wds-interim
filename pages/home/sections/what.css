@@ -58,7 +58,7 @@
 :global(.keynotes) .img {
 	width: 405px;
 	height: 270px;
-  background-image: url(https://files.wds.fm/images/home/what-keynotes.jpg);
+  background-image: url(https://files.wds.fm/images/home/what-keynotes-v1.jpg);
 }
 
 :global(.keynotes) .text {
@@ -78,7 +78,7 @@
 :global(.academies) .img {
 	width: 405px;
 	height: 270px;
-  background-image: url(https://files.wds.fm/images/home/what-academies.jpg);
+  background-image: url(https://files.wds.fm/images/home/what-academies-v1.jpg);
   float: right;
 }
 
@@ -100,7 +100,7 @@
 :global(.meetups) .img {
 	width: 378.5px;
 	height: 252.5px;
-  background-image: url(https://files.wds.fm/images/home/what-meetups.jpg);
+  background-image: url(https://files.wds.fm/images/home/what-meetups-v1.jpg);
 }
 
 :global(.meetups) .text {
@@ -121,7 +121,7 @@
 :global(.activities) .img {
 	width: 378.5px;
 	height: 252.5px;
-  background-image: url(https://files.wds.fm/images/home/what-activities.jpg);
+  background-image: url(https://files.wds.fm/images/home/what-activities-v1.jpg);
   float: right;
 }
 
@@ -144,7 +144,7 @@
 :global(.parties) .img {
 	width: 378.5px;
 	height: 252.5px;
-  background-image: url(https://files.wds.fm/images/home/what-parties.jpg);
+  background-image: url(https://files.wds.fm/images/home/what-parties-v1.jpg);
 }
 
 :global(.parties) .text {
@@ -155,4 +155,30 @@
   margin-left: -94px;
   margin-top: 140px;
   margin-bottom: 170px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	.contentainer {
+		width: 100%;
+	}
+	.title {
+		width: 280px;
+		height: 70px;
+	}
+	.text {
+		width: 100% !important;
+		height: auto !important;
+		padding: 0 16px !important;
+		box-sizing: border-box !important;
+	}
+	.text, .img, .sub-shell {
+		margin-top: 0 !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		margin-bottom: 20px !important;
+		right: 0;
+		left: 0;
+	}
 }

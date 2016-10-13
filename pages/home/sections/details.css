@@ -249,3 +249,55 @@
 .sch-content table td {
 	text-align: right;
 }
+
+@media screen and (max-width: 1024px) {
+
+	.contentainer {
+		width: 100%;
+	}
+	.title {
+		width: 280px;
+		height: 70px;
+	}
+	.text {
+		width: 100% !important;
+		height: auto !important;
+		padding: 0 16px !important;
+		box-sizing: border-box !important;
+	}
+	.text, .img, .sub-shell {
+		margin-top: 0 !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		margin-bottom: 20px !important;
+		right: 0;
+		left: 0;
+	}
+	.intro-shell {
+		display:none;
+	}
+	.included {
+		margin-top: -70;
+		padding: 20px 16px;
+		width: 100%;
+	}
+	.schedule {
+		width: 100%;
+		padding: 20px 16px;
+		margin-bottom: 10px;
+	}
+	.included ul, .schedule table {
+		background-image: none;
+	}
+	:global(.checked) li:before {
+	    left: -28px;
+	    top: 0px;
+	    background-size: 100% auto;
+	}
+	.sch-content table:before {
+		display:none;
+	}
+	.sch-content table th {
+		padding-left: 0;
+	}
+}

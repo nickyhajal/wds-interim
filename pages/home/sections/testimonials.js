@@ -27,19 +27,19 @@ class Testimonials extends React.Component {
 					name: "Gary Ware",
 					from: 'San Diego, CA',
 					text: "WDS is a magical experience that I look forward to every year! When you are surrounded by so much creative, positive, and innovative energy you can't help but to leave inspired with a desire to do good in the world.",
-					avatar: "https://files.wds.fm/images/home/testimonial-gary.png"
+					avatar: "https://files.wds.fm/images/home/testimonial-gary-v1.png"
 				},
 				{
 					name: "Toréa Rodriguez",
 					from: 'Santa Cruz, CA',
 					text: "I go each year to the World Domination Summit so that I can be pushed just outside of my comfort zone, to get out of any ruts that I might be in and to kickstart me into thinking differently.",
-					avatar: "https://files.wds.fm/images/home/testimonial-torea.png"
+					avatar: "https://files.wds.fm/images/home/testimonial-torea-v1.png"
 				},
 				{
 					name: "Kendrick Uy",
 					from: 'British Columbia, Canada',
-					text: "It’s just one of those things that’s hard to explain to people but everyone who’s attended know that it was worth their while. If you’ve never gone to WDS before, definitely sign up for next year. You’ll learn many things that you can use in your everyday life and the connections you make with other people is priceless.",
-					avatar: "https://files.wds.fm/images/home/testimonial-kendrick.png"
+					text: "It’s hard to explain, but everyone who’s attended know that it was worth their while. If you’ve never gone to WDS before, definitely sign up for next year. You’ll learn many things that you can use in your everyday life and the connections you make with other people is priceless.",
+					avatar: "https://files.wds.fm/images/home/testimonial-kendrick-v1.png"
 				}
 			]
     }

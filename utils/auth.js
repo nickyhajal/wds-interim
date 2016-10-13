@@ -48,6 +48,7 @@ const auth = {
 		return api('post product/charge', pkg);
 	},
 	createUser:  (pkg) => {
+		pkg.login = true;
 		return api('post user', pkg);
 	}
 };

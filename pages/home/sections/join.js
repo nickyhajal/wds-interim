@@ -17,7 +17,7 @@ const Join = ({openCheckout}) =>
         <div styleName="img" />
         <div styleName="title" />
         <div styleName="text"  dangerouslySetInnerHTML={{ __html: strJoin }} />
-        <div styleName="realtime">Only 83 tickets left! Don’t miss out!</div>
+        <div styleName="realtime">Limited tickets available! Don’t miss out!</div>
         <Button styleName="button" onClick={openCheckout}>Buy Ticket</Button>
         <div className="clear"></div>
       </div>

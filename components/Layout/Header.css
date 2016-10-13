@@ -2,6 +2,13 @@
 @value blue, orange, green from colors;
 
 
+
+.hiddenNav {
+	display: none;
+}
+
+
+
 .header {
 	position: fixed;
 	top: 0;
@@ -48,12 +55,11 @@
 
 @media screen and (max-width: 1024px) {
 
-  .header {
-    display: flex;
+  .logo {
   }
 
   .row {
-    padding: 0 16px;
+    padding: 0px;
   }
 
 }

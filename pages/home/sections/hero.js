@@ -3,7 +3,7 @@ import styles from './hero.css';
 import CSSModules from 'react-css-modules';
 
 const Hero = () => {
-  const height = (window.innerHeight - 120)+'px';
+  const height = window.outerHeight > 769 ? (window.innerHeight - 120)+'px' : '308px';
   return (
     <div>
       <section styleName="shell" style={{height: height}}>
