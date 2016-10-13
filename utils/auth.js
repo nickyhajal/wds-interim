@@ -49,6 +49,7 @@ const auth = {
 	},
 	createUser:  (pkg) => {
 		pkg.login = true;
+		pkg.ignore_existing = true;
 		return api('post user', pkg);
 	}
 };
