@@ -2,6 +2,10 @@
 @value blue, orange, green, coffee from colors;
 
 
+.button {
+  margin-top: 6px;
+  margin-bottom:25px;
+}
 
 .layout {
 	background: blue;
@@ -11,6 +15,10 @@
 	padding: 40px 0 80px;
 	background: fff;
 	min-height: 400px;
+}
+
+.layout input {
+	background: #fff;
 }
 
 .top-angle {
