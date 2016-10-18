@@ -58,6 +58,7 @@ const auth = {
 			password,
 			hash,
 			domain: '2017.worlddominationsummit.com',
+			path: 'reset',
 		}
 		Actions.resetStatus('sending');
 		api('post user/reset', pkg)
