@@ -95,7 +95,7 @@ class Login extends React.Component {
           <div className="form-row">
             <div className="form-box">
               <Button styleName="button" onClick={this.login}>{btnStr}</Button>
-              <a styleName="link"href="#" onClick={this.back} >Back</a>
+              <a styleName="back" href="#" onClick={this.back} >◂ Back</a>
             </div>
           </div>
         </form>

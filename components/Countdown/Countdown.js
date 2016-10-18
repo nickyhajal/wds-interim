@@ -8,8 +8,8 @@ import Link from '../Link';
 class Countdown extends React.Component {
 
   static propTypes = {
-    until: PropTypes.oneOf([PropTypes.string, PropTypes.object]),
-    interval: PropTypes.int,
+    until: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+    interval: PropTypes.number,
     className: PropTypes.string,
     // children: PropTypes.node,
   };

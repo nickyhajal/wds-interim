@@ -52,9 +52,11 @@ const auth = {
 		pkg.ignore_existing = true;
 		return api('post user', pkg);
 	},
-	reset:  (email) => {
+	reset:  (username, password, hash) => {
 		const pkg = {
-			username: email,
+			username,
+			password,
+			hash,
 			domain: '2017.worlddominationsummit.com',
 		}
 		Actions.resetStatus('sending');
@@ -63,6 +65,8 @@ const auth = {
 			const rsp = raw.data;
 			if (rsp.not_existing) {
 				Actions.resetError("Hm, that account doesn't exist. Try again?");
+			} else if (rsp.msg) {
+				Actions.resetError(rsp.msg);
 			} else {
 				Actions.resetStatus("success");
 			}
