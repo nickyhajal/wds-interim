@@ -33,6 +33,13 @@ class Login extends React.Component {
     auth.reset(this.state.email);
   }
 
+  back(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    this.props.goTo('login');
+  }
+
+
   change(e) {
     const t = e.target;
     const state = {};
@@ -46,8 +53,8 @@ class Login extends React.Component {
       btnStr = 'Sending...';
     } else if (this.props.auth.resetError) {
       btnStr = this.props.auth.resetError;
-    } else if (this.props.auth.resetStatus === 'sent') {
-      btnStr = 'Sent!';
+    } else if (this.props.auth.resetStatus === 'success') {
+      btnStr = 'Success, check your email!';
     }
     return (
       <div className="modal-section">
@@ -70,6 +77,7 @@ class Login extends React.Component {
           <div className="form-row">
             <div className="form-box">
               <Button styleName="button" onClick={this.reset}>{btnStr}</Button>
+              <a styleName="back" href="#" onClick={this.back} >◂ Back</a>
             </div>
           </div>
         </form>

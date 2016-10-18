@@ -1,7 +1,7 @@
-@font-face {font-family: "Vitesse"; src: url("https://files.wds.fm/fonts/Vitesse-Medium.otf") format("opentype");}
-@font-face {font-family: "VitesseLight"; src: url("https://files.wds.fm/fonts/Vitesse-Light.otf") format("opentype");}
-@font-face {font-family: "VitesseBold"; src: url("https://files.wds.fm/fonts/Vitesse-Bold.otf") format("opentype");}
-@font-face {font-family: "VitesseBook"; src: url("https://files.wds.fm/fonts/Vitesse-Book.otf") format("opentype");}
+@font-face {font-family: "Vitesse"; src: url("https://files.wds.fm/fonts/VitesseMedium.otf") format("opentype");}
+@font-face {font-family: "VitesseLight"; src: url("https://files.wds.fm/fonts/VitesseLight.otf") format("opentype");}
+@font-face {font-family: "VitesseBold"; src: url("https://files.wds.fm/fonts/VitesseBold.otf") format("opentype");}
+@font-face {font-family: "VitesseBook"; src: url("https://files.wds.fm/fonts/VitesseBook.otf") format("opentype");}
 @font-face {font-family: "Populaire"; src: url("https://files.wds.fm/fonts/Populaire.otf") format("opentype");}
 @font-face {font-family: "Karla"; src: url("https://files.wds.fm/fonts/Karla-Regular.ttf") format("truetype");}
 @font-face {font-family: "KarlaBold"; src: url("https://files.wds.fm/fonts/Karla-Bold.ttf") format("truetype");}

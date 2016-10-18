@@ -67,6 +67,30 @@ export function attemptLogin() {
   };
 }
 
+export function resetStatus(status) {
+  return (dispatch) => {
+    dispatch({
+      type: C.SET_RESET_STATUS,
+      status,
+    });
+  };
+}
+
+export function resetError(error) {
+  return (dispatch) => {
+    dispatch({
+      type: C.SET_RESET_ERROR,
+      error
+    });
+    setTimeout(() => {
+      dispatch({
+        type: C.SET_RESET_STATUS,
+        status: 'start',
+      });
+    }, 6000);
+  };
+}
+
 export function confirmAuth() {
   return (dispatch) => {
     dispatch({ type: C.CONFIRM_AUTH });

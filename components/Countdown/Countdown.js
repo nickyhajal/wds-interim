@@ -50,14 +50,22 @@ class Countdown extends React.Component {
       seconds: 0,
     }
     if (diff > 0) {
-      r.days = Math.floor(diff / 86400);
-      r.hours = Math.floor((diff % 86400) / 3600);
-      r.minutes = Math.floor(((diff % 86400) % 3600) / 60);
-      r.seconds = Math.floor(((diff % 86400) % 3600) % 60);
+      r.days = this.pad(Math.floor(diff / 86400));
+      r.day_label = (r.days === 1) ? 'Day' : 'Days'
+      r.hours = this.pad(Math.floor((diff) / 3600));
+      r.hour_label = (r.hours === 1) ? 'Hour' : 'Hours'
+      r.minutes = this.pad(Math.floor(((diff % 86400) % 3600) / 60));
+      r.minute_label = (r.minutes === 1) ? 'Min' : 'Mins'
+      r.seconds = this.pad(Math.floor(((diff % 86400) % 3600) % 60));
+      r.second_label = (r.seconds === 1) ? 'Sec' : 'Secs'
     } else {
       r.over = true;
     }
     return r;
+  }
+
+  pad(num) {
+    return ((num < 10) ? `0${num}` : num);
   }
 
   render() {
@@ -65,21 +73,17 @@ class Countdown extends React.Component {
       const r = this.getRemaining();
       return (
         <div styleName="counter" className={cx(this.props.className)}>
-          <section className="days">
-            <div>{r.days}</div>
-            <label>Days</label>
-          </section>
           <section className="hours">
             <div>{r.hours}</div>
-            <label>Hours</label>
+            <label>{r.hour_label}</label>
           </section>
           <section className="minutes">
             <div>{r.minutes}</div>
-            <label>Mins</label>
+            <label>{r.minute_label}</label>
           </section>
           <section className="seconds">
             <div>{r.seconds}</div>
-            <label>Secs</label>
+            <label>{r.second_label}</label>
           </section>
           <div className="clear"></div>
         </div>

@@ -9,7 +9,7 @@
 
 .countdown {
 	background: #fff;
-	margin: 0 auto 60px;
+	margin: 0 auto 80px;
 	width: 450px;
 	padding: 20px;
 	text-align: center;
@@ -44,8 +44,6 @@
 }
 
 .countdown .counters {
-	width: 220px;
-	margin: 0 auto;
 }
 
 .top-angle {

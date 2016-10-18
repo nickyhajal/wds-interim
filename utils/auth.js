@@ -52,9 +52,21 @@ const auth = {
 		pkg.ignore_existing = true;
 		return api('post user', pkg);
 	},
-	reset:  (pkg) => {
-		pkg.domain = '2017.worlddominationsummit.com';
-		return api('post reset', pkg);
+	reset:  (email) => {
+		const pkg = {
+			username: email,
+			domain: '2017.worlddominationsummit.com',
+		}
+		Actions.resetStatus('sending');
+		api('post user/reset', pkg)
+		.then((raw) => {
+			const rsp = raw.data;
+			if (rsp.not_existing) {
+				Actions.resetError("Hm, that account doesn't exist. Try again?");
+			} else {
+				Actions.resetStatus("success");
+			}
+		});
 	}
 };
 
