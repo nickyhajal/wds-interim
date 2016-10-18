@@ -43,7 +43,7 @@ const Header = ({
   ticketClick, scrollTo
 }) => {
   console.info(window.outerHeight);
-  return (window.outerHeight < 769 ? mobileHeader(ticketClick, scrollTo) : desktopHeader(ticketClick, scrollTo));
+  return (window.outerWidth < 1025 ? mobileHeader(ticketClick, scrollTo) : desktopHeader(ticketClick, scrollTo));
  }
 
 export default CSSModules(Header, styles);

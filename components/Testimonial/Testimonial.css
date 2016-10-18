@@ -55,12 +55,10 @@
 
 @media screen and (max-width: 1024px) {
 
-  .header {
-    display: flex;
-  }
-
-  .row {
-    padding: 0 16px;
+  .text {
+    width: 205px;
+    margin: 30px auto 17px;
+    line-height: 139%;
   }
 
 }

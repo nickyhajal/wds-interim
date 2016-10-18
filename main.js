@@ -13,7 +13,7 @@ import 'whatwg-fetch';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import FastClick from 'fastclick';
+import FastClick from 'react-fastclick';
 import { Provider } from 'react-redux';
 
 import router from '~/core/router';

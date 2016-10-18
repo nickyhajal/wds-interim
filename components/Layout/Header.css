@@ -33,6 +33,7 @@
   margin-top: 1px;
   position: relative;
   z-index: 4;
+  margin-left: 30px;
   cursor: pointer;
 }
 
@@ -56,6 +57,9 @@
 @media screen and (max-width: 1024px) {
 
   .logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   }
 
   .row {

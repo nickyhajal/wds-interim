@@ -36,7 +36,18 @@ p {
   background-size: 100% auto;
   position: absolute;
   right: 20px;
-  top: -2px;
+  top: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .modal-close {
+    background: url(https://files.wds.fm/images/button-close.png);
+    width: 22.5px;
+    height: 22.5px;
+    background-size: 100% auto;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+  }
 }
 
 .form-box {

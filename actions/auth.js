@@ -8,7 +8,25 @@ export function updateAuth(me, confirmed) {
     dispatch({
       type: C.SET_AUTH_ME,
       me,
-      confirmed
+      confirmed,
+    });
+  };
+}
+
+export function setResetStatus(status) {
+  return (dispatch) => {
+    dispatch({
+      type: C.SET_RESET_STATUS,
+      status,
+    });
+  };
+}
+
+export function setResetError(error) {
+  return (dispatch) => {
+    dispatch({
+      type: C.SET_RESET_ERROR,
+      error,
     });
   };
 }
@@ -17,7 +35,7 @@ export function loginError(error) {
   return (dispatch) => {
     dispatch({
       type: C.SET_LOGIN_ERROR,
-      error
+      error,
     });
   };
 }
@@ -27,7 +45,7 @@ export function updateCard(card, existing) {
     dispatch({
       type: C.SET_CARD,
       card,
-      existing
+      existing,
     });
   };
 }
@@ -36,7 +54,7 @@ export function updateUseExistingCard(existing) {
   return (dispatch) => {
     dispatch({
       type: C.SET_USE_EXISTING_CARD,
-      existing
+      existing,
     });
   };
 }
@@ -49,27 +67,8 @@ export function attemptLogin() {
   };
 }
 
-export function register(email, password) {
-  return (dispatch) => {
-    dispatch({ type: C.ATTEMPT_LOGIN });
-    fire.authWithPassword({ email, password }, (error) => {
-      if (error) {
-        dispatch({ type: C.DISPLAY_ERROR, error: `Login failed! ${error}` });
-        dispatch({ type: C.LOGOUT });
-      }
-    });
-  };
-}
-
 export function confirmAuth() {
   return (dispatch) => {
     dispatch({ type: C.CONFIRM_AUTH });
-  };
-}
-
-export function logoutUser() {
-  return (dispatch) => {
-    dispatch({ type: C.LOGOUT });
-    fire.unauth();
   };
 }

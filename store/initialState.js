@@ -1,21 +1,23 @@
-import { List, Map, OrderedMap } from 'immutable';
+import { Map } from 'immutable';
 
 export default {
   modals: Map({
     open: false,
-    visibility: 'hidden'
+    visibility: 'hidden',
   }),
   checkout: Map({
     quantity: 1,
     status: 'start',
-    error: false
+    error: false,
   }),
   auth: Map({
- 		me: false,
- 		confirmed: true,
+    me: false,
+    confirmed: true,
     loggingIn: false,
     loginError: false,
     card: false,
-    useExistingCard: false
-  })
+    resetStatus: 'start',
+    resetError: false,
+    useExistingCard: false,
+  }),
 };

@@ -54,7 +54,7 @@ class Contact extends React.Component {
           </div>
           <div styleName="row">
             <label>E-Mail</label>
-            <input type="text" onChange={this.change.bind(this)} placeholder="How should be be in touch?" name="email" />
+            <input type="text" onChange={this.change.bind(this)} placeholder="How should we be in touch?" name="email" />
           </div>
           <div styleName="row">
             <label>Message</label>

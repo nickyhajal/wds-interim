@@ -74,3 +74,22 @@
 	float: left;
 	margin-top: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+  .img {
+    display: none;
+  }
+  .text {
+    float: none;
+    display: block;
+    margin-right: 0;
+    clear: both;
+    width: 100%;
+  }
+  .box {
+    padding: 20px;
+    width: 100% !important;
+    box-sizing: border-box;
+    height: 580px;
+  }
+}

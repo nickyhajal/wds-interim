@@ -1,6 +1,11 @@
 @value colors: "../../../../styles/colors.css";
-@value orange from colors;
+@value orange, green from colors;
 
 .button {
   margin-top: 6px;
+}
+
+.link {
+	font-family: KarlaBold;
+	color: green;
 }

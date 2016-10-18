@@ -39,7 +39,9 @@ class Cart extends React.Component {
 		}
 	}
 
-	toggleCard() {
+	toggleCard(e) {
+		e.stopPropagation();
+		e.preventDefault();
 		this.props.act.updateUseExistingCard(!this.props.auth.useExistingCard);
 	}
 

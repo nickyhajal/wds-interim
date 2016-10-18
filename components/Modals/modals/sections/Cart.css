@@ -188,11 +188,11 @@
   .productRow {
     background: #f7f7f2;
     margin-top: -43px;
-    padding: 18px 16px;
+    padding: 18px 28px 18px 16px;
     font-family: KarlaBold;
     border-bottom: 2px solid #e8e8df;
     border-top: 2px solid #e8e8df;
-    width: 100% !important;
+    margin-left: -20px;
   }
   .productName {
     font-size: 16px;
@@ -228,6 +228,14 @@
     color: #908f83;
     font-size: 15pt;
     margin-top:3px;
+  }
+
+  .checkoutForm :global(.form-box){
+    width: 40%;
+    margin-right: 22px;
+  }
+  .checkoutForm input {
+    width: 100%;
   }
 
 .feeCost {

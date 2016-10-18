@@ -17,6 +17,7 @@ import s from './Layout.css';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import actions from '~/actions/index';
+import Countdown from '~/components/Countdown';
 
 class Layout extends Component {
 

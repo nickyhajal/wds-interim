@@ -99,3 +99,43 @@
 .row {
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 1024px) {
+
+  .top-angle {
+  width: 120%;
+  left: -30px;
+}
+
+.text {
+      width: 100%;
+}
+
+  .title {
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .shell {
+  padding: 40px 20px 80px;
+  box-sizing: border-box;
+}
+
+.left {
+  float: none;
+  width: 320px;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  float:none;
+  clear: both;
+  width: 100%;
+  margin-top: 30px;
+}
+.ilo {
+  margin-bottom: 20px;
+}
+
+}

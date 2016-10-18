@@ -22,16 +22,15 @@ class Login extends React.Component {
     autoBind(Object.getPrototypeOf(this));
     this.state = {
       email: '',
-      pw: '',
     };
   }
 
-  login(e) {
+  reset(e) {
     if (e !== undefined) {
       e.stopPropagation();
       e.preventDefault();
     }
-    auth.login(this.state.email, this.state.pw);
+    auth.reset(this.state.email);
   }
 
   change(e) {
@@ -41,37 +40,23 @@ class Login extends React.Component {
     this.setState(state);
   }
 
-  forgotPw(e) {
-    console.info("RESET");
-    e.stopPropagation();
-    e.preventDefault();
-    console.info("GO TO");
-    this.props.goTo('reset');
-  }
-
   render() {
-    let btnStr = 'Login';
-    if (this.props.auth.loggingIn) {
-      btnStr = 'Logging In...';
-    } else if (this.props.auth.loginError) {
-      btnStr = this.props.auth.loginError;
-    } else if (this.props.auth.me) {
-      btnStr = 'Success!';
+    let btnStr = 'Send Reset E-Mail';
+    if (this.props.auth.resetStatus === 'sending') {
+      btnStr = 'Sending...';
+    } else if (this.props.auth.resetError) {
+      btnStr = this.props.auth.resetError;
+    } else if (this.props.auth.resetStatus === 'sent') {
+      btnStr = 'Sent!';
     }
     return (
       <div className="modal-section">
-        <h3>Login to Your WDS Account</h3>
+        <h3>Reset Your WDS Password</h3>
         <p>
-          Use the email and password you used when you created your WDS account.
-          &nbsp; <a
-            styleName="link"
-            href="#"
-            onClick={this.forgotPw}
-          >
-            Forgot your password?
-          </a>
+          Enter the email address on your account and
+          we'll send you an email to reset your password.
         </p>
-        <form onSubmit={this.login}>
+        <form onSubmit={this.reset}>
           <div className="form-row">
             <div className="form-box">
               <label>E-Mail Address</label>
@@ -84,17 +69,10 @@ class Login extends React.Component {
           </div>
           <div className="form-row">
             <div className="form-box">
-              <label>Password</label>
-              <input type="password" name="pw" onChange={this.change} placeholder="Your Password" />
-            </div>
-          </div>
-          <div className="form-row">
-            <div className="form-box">
-              <Button styleName="button" onClick={this.login}>{btnStr}</Button>
+              <Button styleName="button" onClick={this.reset}>{btnStr}</Button>
             </div>
           </div>
         </form>
-        <Illo right="55" bottom="-50" size="107x540" name="what-2" />
       </div>
     );
   }

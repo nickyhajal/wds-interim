@@ -84,3 +84,9 @@
 	background: blue;
 	opacity: 1;
 }
+@media screen and (max-width: 1024px) {
+	.title {
+    width: 306px;
+    height: 44.5px;
+  }
+}

@@ -10,8 +10,14 @@ import { html as strDate }  from './details-date.md';
 import { html as strIntro } from './details-intro.md';
 import { html as strIncluded } from './details-included.md';
 import { html as strSchedule } from './details-schedule.md';
+import { html as strScheduleMobile } from './details-schedule-mobile.md';
+
 
 const Details = () => {
+	let schedule = strSchedule;
+	if (window.outerWidth < 1025) {
+		schedule = strScheduleMobile;
+	}
   return (
     <section styleName="shell">
       <div styleName="top-angle"/>
@@ -35,7 +41,7 @@ const Details = () => {
 	    </div>
 	    <div styleName="schedule">
 	      <div styleName="sch-angle"/>
-	    	<div styleName="sch-content" dangerouslySetInnerHTML={{ __html: strSchedule }} />
+	    	<div styleName="sch-content" dangerouslySetInnerHTML={{ __html: schedule }} />
 	    </div>
 	    <div styleName="under">
 	    	<Illo left="10" top="-190" size="452x452" name="details-3" />

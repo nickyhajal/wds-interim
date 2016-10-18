@@ -51,6 +51,10 @@ const auth = {
 		pkg.login = true;
 		pkg.ignore_existing = true;
 		return api('post user', pkg);
+	},
+	reset:  (pkg) => {
+		pkg.domain = '2017.worlddominationsummit.com';
+		return api('post reset', pkg);
 	}
 };
 

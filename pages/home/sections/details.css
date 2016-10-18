@@ -250,10 +250,37 @@
 	text-align: right;
 }
 
+:global(.sch-day) h4 {
+	margin-bottom: 10px;
+	margin-top: 0;
+	font-family: KarlaBold;
+}
+
+:global(.sch-day) {
+	padding: 12px 12px 0px 12px;
+	margin-bottom: 12px;
+}
+
+:global(.sch-day.sch-day-highlight) {
+	background: blue;
+	padding: 12px 12px 12px 12px;
+	margin-bottom: 8px;
+}
+:global(.sch-day.last) {
+	margin-bottom: 40px;
+}
+
 @media screen and (max-width: 1024px) {
 
 	.contentainer {
 		width: 100%;
+	}
+	.date {
+		position: relative;
+		top: -26px;
+	}
+	.date h2 {
+		margin-bottom: -7px;
 	}
 	.title {
 		width: 280px;
