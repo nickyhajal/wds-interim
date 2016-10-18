@@ -70,6 +70,11 @@ const auth = {
 				Actions.resetError(rsp.msg);
 			} else {
 				Actions.resetStatus("success");
+				if (hash !== undefined) {
+					setTimeout(() => {
+						location.pathname = "/";
+					}, 6000);
+				}
 			}
 		});
 	}
