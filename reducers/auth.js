@@ -35,7 +35,11 @@ export default function auth(state = Map, action) {
     case C.ATTEMPT_LOGIN:
       return state.set('loggingIn', true);
     case C.SET_RESET_STATUS:
-      return state.set('resetStatus', action.status);
+      return state.withMutations((ctx) => {
+        ctx.set('resetStatus', action.status);
+        ctx.set('resetError', false);
+        return ctx;
+      });
     case C.SET_RESET_ERROR:
       return state.withMutations((ctx) => {
         ctx.set('resetStatus', 'error');

@@ -29,7 +29,7 @@ const Overview = ({openCheckout}) => {
       <div styleName="top-angle"/>
       <div styleName="countdown">
         <h5>Ticket Sales End In</h5>
-        <Countdown styleName="counters" interval={1} until="2016-10-19 00:01:00" />
+        <Countdown styleName="counters" interval={1} until="2016/10/19 00:01:00" />
       </div>
     	<div styleName="contentainer">
 	    	<Illo left="-105" top="730" size="326x241" name="overview-3" z="0" />

@@ -29,6 +29,6 @@ export function setCheckoutError(error) {
         type: C.SET_CHECKOUT_ERROR,
         error: false
       });
-    }, 10000)
+    }, 10000);
   };
 }

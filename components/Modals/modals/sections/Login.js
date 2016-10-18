@@ -42,11 +42,15 @@ class Login extends React.Component {
   }
 
   forgotPw(e) {
-    console.info("RESET");
     e.stopPropagation();
     e.preventDefault();
-    console.info("GO TO");
     this.props.goTo('reset');
+  }
+
+  back(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    this.props.goTo('');
   }
 
   render() {
@@ -91,6 +95,7 @@ class Login extends React.Component {
           <div className="form-row">
             <div className="form-box">
               <Button styleName="button" onClick={this.login}>{btnStr}</Button>
+              <a styleName="link"href="#" onClick={this.back} >Back</a>
             </div>
           </div>
         </form>

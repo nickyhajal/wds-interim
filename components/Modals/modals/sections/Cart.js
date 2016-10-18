@@ -83,10 +83,8 @@ class Cart extends React.Component {
 		if (this.props.checkout.status !== 'process') {
 			this.props.act.updateStatus('process');
 			if (this.props.auth.me) {
-				console.info("START CH");
 				this.startCharge();
 			} else {
-				console.info("CREATE U");
 				const pkg = {
 					first_name: this.state.first_name,
 					last_name: this.state.last_name,
@@ -103,7 +101,6 @@ class Cart extends React.Component {
 							</div>
 						);
 					} else {
-				console.info("CREATED!");
 						auth.getMe();
 						this.startCharge();
 					}
