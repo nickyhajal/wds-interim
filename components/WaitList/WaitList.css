@@ -1,0 +1,19 @@
+@value colors: "../../styles/colors.css";
+@value blue, orange, green from colors;
+
+
+.success {
+  display:block;
+}
+.form {
+  float: left;
+  margin-top: -11px;
+}
+.form button {
+    padding: 12px 23px;
+    margin-top: 7px;
+}
+
+.form label {
+    margin-top: 6px;
+}

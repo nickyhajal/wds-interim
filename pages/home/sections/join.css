@@ -8,6 +8,12 @@
 	position: relative;
 }
 
+.shell h2 {
+  color: #fff;
+  font-family: Vitesse;
+  font-size: 30px;
+}
+
 .title {
 	width: 121.5px;
 	height: 53px;
