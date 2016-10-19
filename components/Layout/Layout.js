@@ -27,9 +27,10 @@ class Layout extends Component {
   };
 
   openCheckout(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    this.props.act.openModal('checkout');
+    // e.preventDefault();
+    // e.stopPropagation();
+    // this.props.act.openModal('checkout');
+    this.doScroll('#tickets');
   }
 
   scrollTo(e) {
@@ -38,8 +39,12 @@ class Layout extends Component {
     const t = e.target;
     $ = window.jQuery;
     const hash = t.hash;
+    this.doScroll(hash);
+  }
+
+  doScroll(hash) {
     var target = $(hash);
-    target = target.length ? target : $('[name=' + t.hash.slice(1) +']');
+    target = target.length ? target : $('[name=' + hash.slice(1) +']');
     if (target.length) {
       $('html, body').animate({
         scrollTop: target.offset().top - 200
@@ -50,7 +55,7 @@ class Layout extends Component {
           location.hash = hash;
           setTimeout(function(){
             target.attr('id', hash);
-            target.attr('name', t.hash.slice(1));
+            target.attr('name', hash.slice(1));
           }, 400);
         }, 50);
       }, 500);

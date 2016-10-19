@@ -33,7 +33,6 @@ const Overview = ({openCheckout}) => {
 	    	<div styleName="date" dangerouslySetInnerHTML={{ __html: strDate}} />
 	    	<div styleName="intro-shell">
 		    	<div styleName="intro" dangerouslySetInnerHTML={{ __html: strIntro}} />
-		    	<CheckoutButton onClick={ openCheckout }>Register Now!</CheckoutButton>
 		    </div>
 		    <VideoChooser videos={videos} styleName="videos" />
 		    <div styleName="story-shell">
@@ -50,3 +49,6 @@ export default CSSModules(Overview, styles);
       //   <h5>Ticket Sales End In</h5>
       //   <Countdown styleName="counters" interval={1} until="2016/10/19 00:01:00" />
       // </div>
+
+      // goes after intro
+		    	// <CheckoutButton onClick={ openCheckout }>Register Now!</CheckoutButton>
