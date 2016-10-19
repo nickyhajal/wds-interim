@@ -27,9 +27,6 @@ const Overview = ({openCheckout}) => {
     	<Illo left="0" top="180" size="218x483" name="overview-1" />
     	<Illo right="0" top="410" size="598x355" name="overview-2" />
       <div styleName="top-angle"/>
-      <div styleName="countdown">
-        <h5>Ticket Sales End In</h5>
-      </div>
     	<div styleName="contentainer">
 	    	<Illo left="-105" top="730" size="326x241" name="overview-3" z="0" />
 	    	<div styleName="title"/>
@@ -49,4 +46,7 @@ const Overview = ({openCheckout}) => {
 }
 
 export default CSSModules(Overview, styles);
-        // <Countdown styleName="counters" interval={1} until="2016/10/19 00:01:00" />
+      // <div styleName="countdown">
+      //   <h5>Ticket Sales End In</h5>
+      //   <Countdown styleName="counters" interval={1} until="2016/10/19 00:01:00" />
+      // </div>
